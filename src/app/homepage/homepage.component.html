@@ -1,0 +1,36 @@
+<section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading"  data-aos="fade-up">Angular 2 ShutterStock API Demo</h1>
+        <p class="lead text-muted  fadeInLeft animated"  data-aos="zoom-in" data-aos-duration="1000">I have used Angular 2 and Shutterstock API to show following images and its details</p>
+        <p  data-aos="fade-up" data-aos-duration="3000">
+          This site is based on Angular 2, Bootstrap 4 and Shutterstock API
+        </p>
+      </div>
+</section>
+
+
+<div class="album text-muted">
+      <div class="container">
+<div class="row" >
+
+          <!--<div class="card" *ngFor="let list of lists" >
+            {{list.page}}
+            <a href="/aboutus/{{list.id}}">
+              <img data-src="{{path}}/{{list.image}}" alt="100%x280" style="height: 280px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15c24cc3959%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15c24cc3959%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22131.2890625%22%20y%3D%22148.0390625%22%3E356x280%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+              <p class="card-text">{{list.name}}</p>
+            </a>
+            
+          </div>-->
+          
+          <div class=" card col-md-4" *ngFor="let list of lists"  data-aos="fade-up" data-aos-duration="1000">
+              <a routerLink="/details/{{list.id}}">
+                <div class="img-cont">
+                <img data-src="{{list.assets.preview.url}}" 
+                alt="100%x280" style="width: 100%; display: block;" src="" data-holder-rendered="true">
+                </div>
+              </a>
+              <p class="card-text"  data-aos="fade-down">{{list.description}}</p>
+          </div>
+</div>
+</div>
+</div>

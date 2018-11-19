@@ -1,0 +1,40 @@
+<div class="album text-muted">
+    <div class="container">
+        <div><a (click)="goBack()">< Back</a></div>
+        <div class="row" > 
+            <div class="col-md-5">
+                <img src="{{lists?.assets?.preview?.url}}" />
+                ID: {{lists.id}}
+            </div>
+            <div class="col-md-7">
+                
+                <h3>Details</h3>
+                <p>{{lists.description}}</p>
+
+                <table class="table table-striped">
+                        <tbody>
+                            <tr *ngIf="lists.assets">
+                                <th scope="row">{{lists?.assets?.small_jpg?.display_name}}</th>
+                                <td>{{lists?.assets?.small_jpg?.dpi}} dpi</td>
+                                <td>{{lists?.assets?.small_jpg?.height}} X {{lists?.assets?.small_jpg?.width}}</td>
+                                <td>{{lists?.assets?.small_jpg?.format}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">{{lists?.assets?.medium_jpg?.display_name}}</th>
+                                <td>{{lists?.assets?.medium_jpg?.dpi}} dpi</td>
+                                <td>{{lists?.assets?.medium_jpg?.height}} X {{lists?.assets?.medium_jpg?.width}}</td>
+                                <td>{{lists?.assets?.medium_jpg?.format}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">{{lists?.assets?.huge_jpg?.display_name}}</th>
+                                <td>{{lists?.assets?.huge_jpg?.dpi}} dpi</td>
+                                <td>{{lists?.assets?.huge_jpg?.height}} X {{lists?.assets?.huge_jpg?.width}}</td>
+                                <td>{{lists?.assets?.huge_jpg?.format}}</td>
+                            </tr>
+                           
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

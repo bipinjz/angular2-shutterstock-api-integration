@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+
+  state = true;
+
+  test(v){
+    v += 1;
+    return v;
+  }
+
 }
