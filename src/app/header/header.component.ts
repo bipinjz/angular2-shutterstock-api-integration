@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  header ='Angular 2 Shutterstock API Integration';
+  header ='Angular Shutterstock Gallery';
   navs = [
     {url:"/", label:"Home" },
     // {url:"/aboutus", label:"About Us" },
